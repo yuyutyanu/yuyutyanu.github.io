@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>system-development</title>
+    <link rel="stylesheet" href="../public/stylesheets/style.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js" charset="utf-8"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+
+    <script type="text/javascript">
+        var socket = io.connect('http://localhost:3000');
+    </script>
+</head>
+
+<body>
+
+    <div class="task">
+        <div v-for="item in list" class="task-table">
+            <div class="problem">
+                <h3>{{ item.problem_title }}</h3>
+                <input v-model="item.problem_input">
+                <input type="button" name="name" value="送信" @click="problem_submit($index)" class="button_design">
+                <ul v-for="problem_items in item.problemtext" class="">
+                    <li>
+                        {{ problem_items}}
+                    </li>
+                </ul>
+            </div>
+            <div class="answer answer_variable">
+                <h3>{{ item.answer_title }}</h3>
+                <input v-model="item.answer_input">
+                <input type="button" name="name" value="送信" @click="answer_submit($index)" class="button_design">
+                <ul v-for="answer_items in item.answertext">
+                    <li>
+                        {{answer_items}}
+                    </li>
+                </ul>
+            </div>
+            <div class="date">
+                <h2>{{ item.date }} {{item.username}}</h2>
+            </div>
+            <div class="before">
+                <h3>{{ item.before_title }}</h3>
+                <input v-model="item.before_input">
+                <input type="button" name="name" value="送信" @click="before_submit($index)" class="button_design">
+                <ul v-for="before_items in item.beforetext">
+                    <li>{{before_items}}</li>
+                </ul>
+            </div>
+
+            <div class="after">
+                <h3>{{ item.after_title }}</h3>
+                <input v-model="item.after_input">
+                <input type="button" name="name" value="送信" @click="after_submit($index)" class="button_design">
+                <ul v-for="after_items in item.aftertext">
+                  <li>{{ after_items }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="../public/javascripts/vue.js" charset="utf-8"></script>
+</body>
+
+</html>

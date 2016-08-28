@@ -48,8 +48,7 @@ background-color: rgba(0, 0, 0, 0.3);
   margin-bottom:8%;
 }
 .before li{
-  margin-left: 5%;
-  margin-bottom:5%;
+  
   list-style: none;
 }
 .after {
@@ -66,8 +65,7 @@ background-color: rgba(0, 0, 0, 0.3);
   margin-bottom:8%;
 }
 .after li{
-  margin-left: 5%;
-  margin-bottom:5%;
+
   list-style: none;
 }
 .problem {
@@ -90,8 +88,6 @@ background-color: rgba(0, 0, 0, 0.3);
   margin-left:2%;
 }
 .problem li {
-    margin-left: 5%;
-    padding-bottom:5%;
     list-style: none;
 }
 .answer {
@@ -114,7 +110,6 @@ background-color: rgba(0, 0, 0, 0.3);
   margin-left:2%;
 }
 .answer li{
-    margin-left: 5%;
-    margin-bottom:5%;
+
     list-style: none;
 }
