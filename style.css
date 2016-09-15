@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    transition: all 5s ease;
+    background-color: black;
+}
+#leftmargin {
+    margin-left: 18%;
+}
+button {
+    margin-top: 33%;
+    height: 19%;
+    width: 10%;
+    border: ridge 10px;
+    border-radius: 50% 50% 50% 50%;
+    margin-right: 17%;
+    background-color: white;
+    font-size: 110%;
+    box-shadow: 10px 10px;
+    transition: background-color 0.8s ease;
+}
+button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.photos {}
+.photo_portfolio {
+    position: absolute;
+    border: ridge 5px;
+    height: 30%;
+    width: 25%;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-image: url('./title_photo/0001.jpg');
+}
+.photo_profile {
+    border: ridge 5px;
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    margin-top: 5%;
+    margin-left: 37.5%;
+    background-image: url('./title_photo/001.jpg');
+}
+.photo_contact {
+    border: ridge 5px;
+    position: absolute;
+    width: 25%;
+    height: 45%;
+    margin-top: 5%;
+    margin-left: 65%;
+    background-image: url('./title_photo/001.jpg');
+}
+.ctfcontact p {
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
