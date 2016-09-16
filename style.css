@@ -36,25 +36,28 @@ button:hover {
     width: 25%;
     margin-left: 10%;
     margin-top: 5%;
-    background-image: url('./title_photo/0001.jpg');
+    background-image: url('./title_photo/github.png');
+    background-size:100% auto;
 }
 .photo_profile {
     border: ridge 5px;
     position: absolute;
-    height: 25%;
+    height: 45%;
     width: 25%;
     margin-top: 5%;
     margin-left: 37.5%;
-    background-image: url('./title_photo/001.jpg');
+    background-image: url('./title_photo/chanu.jpg');
+    background-size:100% auto;
 }
 .photo_contact {
     border: ridge 5px;
     position: absolute;
     width: 25%;
-    height: 45%;
+    height: 25%;
     margin-top: 5%;
     margin-left: 65%;
-    background-image: url('./title_photo/001.jpg');
+    background-image: url('./title_photo/Twitter_Logo_White_On_Image/Twitter_Logo_White_On_Image.png');
+    background-size:100% auto;
 }
 .ctfcontact p {
     position: absolute;

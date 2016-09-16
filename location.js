@@ -3,11 +3,11 @@ setTimeout(function() {
 }, 500);
 
 function portfolio(){
-  location.href = './mainpages/portfolio.html'
+  location.href = 'https://github.com/yuyutyanu'
 }
 function profile(){
-  location.href = './mainpages/profile.html'
+  location.href = './profile.html'
 }
 function contact(){
-  location.href = './mainpages/contact.html'
+  location.href = './index.html'
 }
